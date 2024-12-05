@@ -22,7 +22,7 @@ This script interacts with the ManageEngine ServiceDesk Plus API to retrieve and
 2. Install the required dependencies using pip:
 
    ```sh
-   pip install requests
+   pip install -r requirements.txt
    ```
 
 3. Update the `.example.env` file with your own values
