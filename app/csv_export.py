@@ -13,7 +13,7 @@ def write_to_csv(all_security_incidents):
                 - 'all_notes': A list of dictionaries, where each dictionary represents a note associated with the incident.
     """
 
-    with open('security_incidents.csv', 'w', newline='') as f:
+    with open('exports/security_incidents.csv', 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(["Incident ID", "Subject", "Description", "Created Time", "Status", "Priority", "Group", "Technician", "Note ID", "Note Description"])
         for incident in all_security_incidents:

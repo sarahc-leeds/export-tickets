@@ -116,7 +116,7 @@ def main():
     all_security_incidents = get_all_requests_and_notes(token)
 
     # output all the security incidents and their notes into a json file
-    with open('security_incidents.json', 'w') as f:
+    with open('exports/security_incidents.json', 'w') as f:
         json.dump(all_security_incidents, f, indent=4)
 
     write_to_csv(all_security_incidents)
